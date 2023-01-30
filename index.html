@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Castway</title>
+    <link rel="stylesheet" href="./sass/main.scss">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo link">Castaway</a>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">Home</li>
+                    <li class="navigation__item">Episodes</li>
+                    <li class="navigation__item">About</li>
+                    <li class="navigation__item">Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- hero -->
+        <section class="section hero__section">
+            <div class="container">
+                <picture></picture>
+                <img srcset="./images/hero-image(1x).jpg 1x, ./images/hero-image(2x)" src="./images/hero-image(1x).png" alt="man making podcast" width="650" height="873" > 
+                <h1 class="hero__herading">
+                    Take your
+                    podcast to the
+                    next <span class="hero__herading--decoration">level</span>
+                </h1>
+                <p class="hero__paragraph">Listen on<p>
+                <ul class="hero__list list">
+                    <li class="hero__item">
+                        <a class="hero__link" href="https://open.spotify.com/">
+                            <svg class="hero__icon" width="32" height="32">
+                                <use href="images/symbol-defs.svg#iconspoty-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="hero__item">
+                        <a class="hero__link" href="https://pocketcasts.com/">
+                            <svg class="hero__icon" width="32" height="32">
+                                <use href="images/symbol-defs.svg#iconpocket_casts-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="hero__item">
+                        <a class="hero__link" href="https://soundcloud.com/">
+                            <svg class="hero__icon" width="32" height="32">
+                                <use href="images/symbol-defs.svg#iconsoundcloud-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="hero__item">
+                        <a class="hero__link" href="https://www.apple.com/apple-podcasts/">
+                            <svg class="hero__icon" width="32" height="32">
+                                <use href="images/symbol-defs.svg#iconapple_podcasts-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="hero__item">
+                        <a class="hero__link" href="https://overcast.fm/">
+                            <svg class="hero__icon" width="32" height="32">
+                                <use href="images/symbol-defs.svg#iconovercast-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- podcasts -->
+        <section class="section podcast__section">
+            <div class="container">
+                <h2 class="podcast__heading">Latest episodes</h2>
+                <button type="button" class="podcast__button--view">View all episodes</button>
+                <ul class="podcast__list list">
+                    <li class="podcast__item">
+                        <img srcset="./images/podcasts-3rd-ep-image(1x).jpg 1x, ./images/podcasts-3rd-ep-image(2x).jpg 2x" scr="./images/podcasts-3rd-ep-image(1x).jpg" alt="sound-equipment" class="podcast__image" width="389">
+                        <p class="podcast__tag">Gear</p>
+                        <h3 class="podcast__title">
+                            Should you get outboard audio gear?
+                        </h3>
+                        <p class="podcast__par">
+                            Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might
+                            want to consider picking something up.
+                        </p>
+                        <button type="button" class="podcast__button--info">View Episode Details</button>
+                    </li>
+                    <li class="podcast__item">
+                        <img srcset="./images/podcasts-2nd-ep-image(1x).jpg 1x, ./images/podcasts-2nd-ep-image(2x).jpg 2x" scr="./images/podcasts-2nd-ep-image(1x).jpg" alt="microphone" class="podcast__image" width="389">
+                        <p class="podcast__tag">Tips & Tricks</p>
+                        <h3 class="podcast__title">
+                            Mic tricks to take you to the next level
+                        </h3>
+                        <p class="podcast__par">
+                            Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.
+                        </p>
+                        <button type="button" class="podcast__button--info">View Episode Details</button>
+                    </li>
+                    <li class="podcast__item">
+                        <img srcset="./images/podcasts-1st-ep-image(1x).jpg 1x, ./images/podcasts-1st-ep-image(2x).jpg 2x" scr="./images/podcasts-1st-ep-image(1x).jpg" alt="conversation" class="podcast__image" width="389">
+                        <p class="podcast__tag">Gear</p>
+                        <h3 class="podcast__title">
+                            The best microphone under $200
+                        </h3>
+                        <p class="podcast__par">
+                            With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.
+                        </p>
+                        <button type="button" class="podcast__button--info">View Episode Details</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- host -->
+        <section class="section__host">
+            <div class="container">
+                <p class="host__meeting">Meet your host</p>
+                <h2 class="host__heading">Jacob Paulaner</h2>
+                <p class="host__par">Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
+                <p class="host__par">He’s here to help you level up your game by sharing everything he’s learned along the way.</p>
+                <img srcset="./images/hero-image(1x).jpg 1x, ./images/hero-image(2x) 2x" src="./images/host-image(1x).jpg" alt="Jacob Paulaner is sitting">
+            </div>
+        </section>
+        <!-- form -->
+        <section class="section__form">
+            <div class="container">
+                <p class="form__pre-heading">Email Newsletter</p>
+                <h2 class="form__heading">Subscribe for updates</h2>
+                <form>
+                    <input type="text" name="username" placeholder="Name" class="form__input">
+                    <input type="email" name="useremail" placeholder="Email" class="form__input">
+                    <button type="submit" class="form__button">submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- feedback -->
+        <section class="section__feedback">
+            <div class="container">
+                <p class="feedback__comment">I can’t recommend this podcast enough</p>
+                <p class="feedback__name">Betty Lacey</p>
+
+                <p class="feedback__comment">Jacob is the best in the business</p>
+                <p class="feedback__name">Adam Driver</p>
+
+                <p class="feedback__comment">A wealth of audio knowledge</p>
+                <p class="feedback__name">Marcus Brown</p>
+                
+                <p class="feedback__comment">Every episode is a gem!</p>
+                <p class="feedback__name">Jessica Knowl</p>
+
+                <p class="feedback__comment">Whoa whoa, let me take some notes!</p>
+                <p class="feedback__name">Scott Adams</p>
+                
+                <p class="feedback__comment">I’ve upped my game considerably since I started listening</p>
+                <p class="feedback__name">Steven Blast</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="/" class="logo link">Castaway</a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link" href="https://www.instagram.com/">
+                        <svg class="footer__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#iconimstagram-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="https://twitter.com/i/flow/login">
+                        <svg class="footer__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icontwitter-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="https://www.facebook.com/">
+                        <svg class="footer__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#iconfacebook-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer__list--nav list">
+                <li class="footer__item--nav">Home</li>
+                <li class="footer__item--nav">About</li>
+                <li class="footer__item--nav">Episodes</li>
+                <li class="footer__item--nav">Contact</li>
+            </ul>
+            <ul class="footer__list--info">
+                <li class="footer__item--info">Style Guide</li>
+                <li class="footer__item--info">Instructions</li>
+                <li class="footer__item--info">Changelog</li>
+                <li class="footer__item--info">Credit</li>
+                <li class="footer__item--info">Powered by Webflow</li>
+                <li class="footer__item--info">Licenses</li>
+            </ul>
+        </div>
+        <ul class="footer__list--soc list">
+            <li class="footer__item--soc">
+                <a class="footer__link--soc" href="https://open.spotify.com/">
+                    <svg class="footer__icon--soc" width="32" height="32">
+                        <use href="images/symbol-defs.svg#iconspoty-icon"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__item--soc">
+                <a class="footer__link--soc" href="https://pocketcasts.com/">
+                    <svg class="footer__icon--soc" width="32" height="32">
+                        <use href="images/symbol-defs.svg#iconpocket_casts-icon"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__item--soc">
+                <a class="footer__link--soc" href="https://soundcloud.com/">
+                    <svg class="footer__icon--soc" width="32" height="32">
+                        <use href="images/symbol-defs.svg#iconsoundcloud-icon"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__item--soc">
+                <a class="footer__link--soc" href="https://www.apple.com/apple-podcasts/">
+                    <svg class="footer__icon--soc" width="32" height="32">
+                        <use href="images/symbol-defs.svg#iconapple_podcasts-icon"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__item--soc">
+                <a class="footer__link--soc" href="https://overcast.fm/">
+                    <svg class="footer__icon--soc" width="32" height="32">
+                        <use href="images/symbol-defs.svg#iconovercast-icon"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
